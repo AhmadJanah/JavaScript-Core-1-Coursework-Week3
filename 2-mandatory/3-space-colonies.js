@@ -15,7 +15,11 @@
   
 */
 
-function getSettlers() {}
+function getSettlers(arr) {
+  return arr.filter(voygare => voygare.substring(voygare.length-6, voygare.length) === 'family' && voygare[0] === 'A');
+}
+
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

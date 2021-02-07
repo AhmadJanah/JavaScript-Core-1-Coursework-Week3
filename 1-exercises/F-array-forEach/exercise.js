@@ -28,3 +28,15 @@ var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 14
 'FizzBuzz'
 */
+
+function formatNumber(num){
+  if (num%15 == 0) return "FizzBuzz";
+  if (num%5 == 0) return "Buzz";
+  if (num%3 == 0) return "Fizz";
+  return num;
+}
+
+
+arr.map(formatNumber).forEach(function(num, index) {
+  console.log(num);
+});
